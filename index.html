@@ -63,9 +63,10 @@
               <p class="card-text">
                 Motos de alta performance, projetadas para corridas e pilotagem esportiva em alta velocidade em estradas ou pistas.
               </p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-esportiva">Ver produto</a>
             </div>
           </div>
+
           <!-- Naked -->
           <div class="card">
             <img src="image/2-naked.jpg" alt="" class="img-fluid">
@@ -74,7 +75,7 @@
               <p class="card-text">
                 Também conhecidas como roadsters, são motos sem carenagem, com design minimalista e comumente utilizadas para pilotagem urbana ou viagens em estradas.
               </p>
-              <a class="btn btn-primary" href="#">Ver produto</a>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-naked">Ver produto</a>
             </div>
           </div>
 
@@ -86,7 +87,7 @@
               <p class="card-text">
                 Essas motos têm design personalizado e muitas vezes são feitas sob medida para o gosto do proprietário. São populares entre os motociclistas que querem se destacar e mostrar seu estilo pessoal.
               </p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-custom">Ver produto</a>
             </div>
           </div>
 
@@ -169,7 +170,8 @@
     </div>
   </section>
 
-  <div class="modal fade" id="modal-1">
+  <!-- Modal Esportiva -->
+  <div class="modal fade" id="modal-esportiva">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -188,9 +190,137 @@
             </thead>
             <tbody>
               <tr>
+                <td>Yamaha</td>
+                <td>YZF-R1</td>
+                <td>R$ 104.490</td>
+              </tr>
+              <tr>
+                <td>Kawasaki </td>
+                <td>Ninja ZX-10R</td>
+                <td>R$ 99.990</td>
+              </tr>
+              <tr>
                 <td>BMW</td>
-                <td>S1000 RR</td>
-                <td>R$ 50000</td>
+                <td>S1000RR</td>
+                <td>R$ 119.950</td>
+              </tr>
+              <tr>
+                <td>Suzuki</td>
+                <td>GSX-R1000</td>
+                <td>R$ 98.690</td>
+              </tr>
+              <tr>
+                <td>Honda</td>
+                <td>CBR1000RR Fireblade</td>
+                <td>R$ 91.000</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Naked -->
+  <div class="modal fade" id="modal-naked">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Categoria - Naked</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Confira os modelos e os preços</h6>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Yamaha</td>
+                <td>MT-03</td>
+                <td>R$ 27.990</td>
+              </tr>
+              <tr>
+                <td>Kawasaki</td>
+                <td>Z400</td>
+                <td>R$ 26.690</td>
+              </tr>
+              <tr>
+                <td>Honda</td>
+                <td>CB500F</td>
+                <td>R$ 34.000</td>
+              </tr>
+              <tr>
+                <td>BMW</td>
+                <td>G 310 R</td>
+                <td>R$ 29.900</td>
+              </tr>
+              <tr>
+                <td>Triumph</td>
+                <td>Street Triple S</td>
+                <td>R$ 46.090</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Custom -->
+  <div class="modal fade" id="modal-naked">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Categoria - Custom</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Confira os modelos e os preços</h6>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Harley-Davidson</td>
+                <td>Sportster Iron 883</td>
+                <td>R$ 52.200</td>
+              </tr>
+              <tr>
+                <td>Indian Scout</td>
+                <td>Bobber Sixty</td>
+                <td>R$ 59.990</td>
+              </tr>
+              <tr>
+                <td>Yamaha</td>
+                <td>XV 950 R Bolt</td>
+                <td>R$ 46.990</td>
+              </tr>
+              <tr>
+                <td>Triumph</td>
+                <td>Bonneville Bobber</td>
+                <td>R$ 59.900</td>
+              </tr>
+              <tr>
+                <td>Honda</td>
+                <td>Shadow 750</td>
+                <td>R$ 36.500</td>
               </tr>
             </tbody>
           </table>
