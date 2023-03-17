@@ -1,0 +1,114 @@
+header {
+  padding: 20px 0px;
+  background-color: #1a1a1a;
+}
+
+header h1 {
+  color: #fa2020;
+  font-size: 40px;
+}
+
+header h1::after {
+  content: "To";
+  color: #ffffff; 
+} 
+
+
+section {
+  padding: 4rem 2rem;
+}
+
+#sobre {
+    background-image: url("..//image/background-contato-1.png");
+    color: #fc5151;
+
+}
+
+#sobre p {
+  color: #fff;
+}
+
+.subscribe {
+  background-color: #ff3838;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.subscribe:hover {
+  background-color: #ffffff;
+  font-size: 20px;
+  color: #ff3838;
+}
+
+input, textarea {
+  margin-bottom: 1rem;
+}
+
+.choice-style {
+  font-size: 40px;
+}
+
+.choice-style:after {
+  content: "disponíveis";
+  color: #0d6efd; 
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fa2020;
+}
+
+
+
+.card {
+  width: 100%;
+  float: left;
+  margin: 15px 5px;
+}
+
+#contato {
+  color: #ff3838;
+  background: url("../image/background-contato-1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#contato p {
+  font-size: 20px;;
+  color: #fff;
+}
+
+
+.card {
+  width: 32%;
+  float: left;
+  margin: 15px 5px;
+}
+
+ .img-fluid:hover {
+  filter: saturate(0);
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+    float: left;
+    margin: 15px 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin: 15px 5px;
+  }
+}
+
