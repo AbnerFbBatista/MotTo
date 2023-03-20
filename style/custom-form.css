@@ -1,0 +1,10 @@
+a.cadastre-se, a:link
+a:visited
+a:active {
+  
+  color: rgb(0, 81, 255);
+}
+
+#cadastro {
+  background-color: rgb(243, 243, 243);
+}

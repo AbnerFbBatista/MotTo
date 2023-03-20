@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style/custom.css">
+  <link class="favicon" rel="icon" type="image/" href="image/motorcycle-solid.svg">
   <title>MotTo</title>
 </head>
 
@@ -22,6 +23,7 @@
             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
             <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
             <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
           </ul>
         </div>
@@ -29,6 +31,39 @@
     </div>
   </header>
 
+  <!-- Carousel -->
+  <section class="section-slide">
+    <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <div class="w-100">
+            <img src="image/slide/slide-1.png" class="d-block w-100" alt="Slide 1">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="w-100">
+            <img src="image/slide/slide-2.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="w-100">
+            <img src="image/slide/slide-3.jpg" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
   <section id="sobre" class="sobre">
     <div class="container">
       <div class="row">
@@ -41,104 +76,105 @@
             Nós entendemos que uma moto é mais do que apenas um meio de transporte - é uma extensão do seu estilo de vida. É por isso que nos esforçamos para oferecer uma variedade de opções para atender a diferentes estilos e orçamentos.
           </p>
           <div class="btn btn-small subscribe"><a href="#produtos">Escolher meu estilo</a> </div>
-          
+
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Produtos -->
   <section id="produtos">
     <div class="row">
-    <div class="container">
-      
+      <div class="container">
+
         <div class="col-12 col-md-12 col-sm-12">
           <h2 class="choice-style">Modelos </h2>
-          </div>
+        </div>
 
-          <!-- Esportiva -->
-          <div class="card">
-            <img src="image/1-sport.jpg" alt="" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Esportiva</h5>
-              <p class="card-text">
-                Motos de alta performance, projetadas para corridas e pilotagem esportiva em alta velocidade em estradas ou pistas.
-              </p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-esportiva">Ver produto</a>
-            </div>
-          </div>
-
-          <!-- Naked -->
-          <div class="card">
-            <img src="image/2-naked.jpg" alt="" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Naked</h5>
-              <p class="card-text">
-                Também conhecidas como roadsters, são motos sem carenagem, com design minimalista e comumente utilizadas para pilotagem urbana ou viagens em estradas.
-              </p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-naked">Ver produto</a>
-            </div>
-          </div>
-
-          <!-- Custom -->
-          <div class="card">
-            <img src="image/3-custom.jpg" alt="" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Custom</h5>
-              <p class="card-text">
-                Essas motos têm design personalizado e muitas vezes são feitas sob medida para o gosto do proprietário. São populares entre os motociclistas que querem se destacar e mostrar seu estilo pessoal.
-              </p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-custom">Ver produto</a>
-            </div>
-          </div>
-
-          <!-- Cruisers -->
-          <div class="card">
-            <img src="image/4-cruiser.jpg" alt="" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Cruisers</h5>
-              <p class="card-text">
-                Essas motos têm um design relaxado e confortável, com assentos baixos, guidões altos e amplos e grandes motores V-twin. São projetadas para pilotagem tranquila em estradas longas.
-              </p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
-            </div>
-          </div>
-
-          <!-- Off-road -->
-          <div class="card">
-            <img src="image/5-off-road.jpg" alt="" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Off-road</h5>
-              <p class="card-text">
-                São motos projetadas para andar em terrenos acidentados, como trilhas e estradas de terra. Geralmente são equipadas com suspensões robustas, pneus de perfil alto e motores potentes.
-              </p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
-            </div>
-          </div>
-
-          <!-- Touring -->
-          <div class="card">
-            <img src="image/6-touring.jpg" alt="" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Touring</h5>
-              <p class="card-text">
-                São motos projetadas para longas viagens, com conforto e espaço para bagagem. Possuem carenagens para proteção contra o vento e elementos climáticos.
-              </p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
-            </div>
-          </div>
-
-          <!-- Card Scooters -->
-          <div class="card">
-            <img src="image/7-scooters.jpg" alt="Moto Scooters" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Scooters</h5>
-              <p class="card-text">
-                São motos com design compacto e leves, com motores pequenos, frequentemente usadas para pilotagem urbana, devido à sua facilidade de manuseio e eficiência no trânsito.
-              </p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
-            </div>
+        <!-- Esportiva -->
+        <div class="card">
+          <img src="image/1-sport.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Esportiva</h5>
+            <p class="card-text">
+              Motos de alta performance, projetadas para corridas e pilotagem esportiva em alta velocidade em estradas ou pistas.
+            </p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-esportiva">Ver produto</a>
           </div>
         </div>
+
+        <!-- Naked -->
+        <div class="card">
+          <img src="image/2-naked.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Naked</h5>
+            <p class="card-text">
+              Também conhecidas como roadsters, são motos sem carenagem, com design minimalista e comumente utilizadas para pilotagem urbana ou viagens em estradas.
+            </p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-naked">Ver produto</a>
+          </div>
+        </div>
+
+        <!-- Custom -->
+        <div class="card">
+          <img src="image/3-custom.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Custom</h5>
+            <p class="card-text">
+              Essas motos têm design personalizado e muitas vezes são feitas sob medida para o gosto do proprietário. São populares entre os motociclistas que querem se destacar e mostrar seu estilo pessoal.
+            </p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-custom">Ver produto</a>
+          </div>
+        </div>
+
+        <!-- Cruisers -->
+        <div class="card">
+          <img src="image/4-cruiser.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Cruisers</h5>
+            <p class="card-text">
+              Essas motos têm um design relaxado e confortável, com assentos baixos, guidões altos e amplos e grandes motores V-twin. São projetadas para pilotagem tranquila em estradas longas.
+            </p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+          </div>
+        </div>
+
+        <!-- Off-road -->
+        <div class="card">
+          <img src="image/5-off-road.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Off-road</h5>
+            <p class="card-text">
+              São motos projetadas para andar em terrenos acidentados, como trilhas e estradas de terra. Geralmente são equipadas com suspensões robustas, pneus de perfil alto e motores potentes.
+            </p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+          </div>
+        </div>
+
+        <!-- Touring -->
+        <div class="card">
+          <img src="image/6-touring.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Touring</h5>
+            <p class="card-text">
+              São motos projetadas para longas viagens, com conforto e espaço para bagagem. Possuem carenagens para proteção contra o vento e elementos climáticos.
+            </p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+          </div>
+        </div>
+
+        <!-- Card Scooters -->
+        <div class="card">
+          <img src="image/7-scooters.jpg" alt="Moto Scooters" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Scooters</h5>
+            <p class="card-text">
+              São motos com design compacto e leves, com motores pequenos, frequentemente usadas para pilotagem urbana, devido à sua facilidade de manuseio e eficiência no trânsito.
+            </p>
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+          </div>
+        </div>
+      </div>
   </section>
 
   <!-- Contato -->
@@ -147,7 +183,7 @@
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <h2>Contato</h2>
-          <p>Ficou interessado? Preencha os campos do formulário para receber sua moto 0KM.</p>
+          <p>Quer ficar por dentro das novidades? Preencha os campos do formulário e receba promoções, dicas de pilotagem, novidades e muito mais!</p>
         </div>
         <div class="col">
           <form class="form">
@@ -157,10 +193,6 @@
 
             <div class="input-group">
               <input class="form-control" type="text" name="email" placeholder="Digite seu email">
-            </div>
-
-            <div class="input-group">
-              <textarea class="form-control" name="" rows="5"></textarea>
             </div>
 
             <button type="submit" class="btn btn-lg btn-primary">Solicitar cotação</button>
@@ -335,5 +367,15 @@
 </body>
 
 <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/3b2c50eacd.js" crossorigin="anonymous"></script>
+
+<!-- Script carousel -->
+<script>
+  var myCarousel = document.querySelector('#carouselExampleFade')
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    pause: false,
+    interval: 3000
+  })
+</script>
 
 </html>

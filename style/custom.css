@@ -1,3 +1,5 @@
+
+
 header {
   padding: 20px 0px;
   background-color: #1a1a1a;
@@ -6,6 +8,24 @@ header {
 header h1 {
   color: #fa2020;
   font-size: 40px;
+}
+
+header a:link, a:visited {
+  
+  color: rgb(255, 255, 255);
+}
+
+.favicon {
+  color: #fa2020;
+}
+
+header li {
+  color: rgb(232, 232, 232);
+  font-size: 19px;
+}
+header li:hover {
+  border-bottom: 2px solid #fa2020;
+  font-size: 21px;
 }
 
 header h1::after {
@@ -19,13 +39,18 @@ section {
 }
 
 #sobre {
-    background-image: url("..//image/background-contato-1.png");
+    background-color: #1A1A1A;
     color: #fc5151;
 
 }
 
 #sobre p {
-  color: #fff;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+#sobre h2 {
+  font-size: 50px;
 }
 
 .subscribe {
@@ -45,7 +70,7 @@ input, textarea {
 }
 
 .choice-style {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .choice-style:after {
@@ -60,21 +85,25 @@ a:active {
   color: #fff;
 }
 
+header .nav-link:focus, .nav-link:hover {
+  color: #fff;
+}
+
 a:hover {
   color: #fa2020;
 }
 
-
-
 .card {
   width: 100%;
+  height: 100%;
   float: left;
   margin: 15px 5px;
+  border-bottom: 5px solid #0d6dfd21;
 }
 
 #contato {
   color: #ff3838;
-  background: url("../image/background-contato-1.png");
+  background: url("../image/background-contato.png");
   background-position: center;
   background-size: cover;
 }
@@ -89,10 +118,14 @@ a:hover {
   width: 32%;
   float: left;
   margin: 15px 5px;
+  height: 680px;
 }
 
- .img-fluid:hover {
+ .img-fluid {
   filter: saturate(0);
+}
+ .img-fluid:hover {
+  filter: saturate(1);
 }
 
 @media (max-width: 500px) {
@@ -112,3 +145,7 @@ a:hover {
   }
 }
 
+.section-slide {
+  padding: 0px;
+  margin: auto;
+}
